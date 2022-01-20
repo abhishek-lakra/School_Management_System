@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../image/stu1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; 
+    cursor: default;
+    padding: 0;
+    margin: 0;
+    font-family: "poppins", sans-serif;
+}
+
+.full {
+    min-height: 30rem;
+}
+
+nav {
+    background-color: black;
+    opacity: 0.8;
+    width: 100%;
+    height: 150px;
+    line-height: 10px;
+}
+
+nav img {
+    width: 100px;
+    margin-left: 1.9rem;
+    margin-top: 1%;
+    cursor: pointer;
+}
+
+nav ul {
+    float: right;
+    margin: 0;
+    margin-top: 4%;
+    margin-right: 1.9rem;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    border-bottom: 50px;
+    font-size: 16px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: whitesmoke;
+    padding: 20px;
+    transition: all 0.5s ease;
+}
+
+nav ul li a:hover {
+    background-color: #167447;
+    color: white;
+    transform: scale(1.3);
+    font-weight: bold;
+    border-radius: 20px;
+    
+}
+
+.headline {
+    position: relative;
+    left: 35%;
+    bottom: -20px;
+    background-color: black;
+    border-radius: 10px;
+    opacity: 0.8;
+    width: 30%;
+    height: 63px;
+    margin: 10px;
+    color: white;
+    padding: 10px;
+}
+
+.headline h2 {
+    text-align: center;
+    margin: 4px;
+}
+
+.details {
+    color: white;
+    background-color: black;
+    opacity: 0.8;
+    width: 90%;
+    height: 550px;
+    position: relative;
+    top: 30px;
+    left: 5%;
+    border-radius: 20px;
+
+}
+
+.details form {
+    margin: 2px;
+    padding: 2px;
+}
+
+.details input[type = "text"], input[type = "email"]{
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #333;
+    color: white;
+}
+
+#inputClass{
+    background: black;
+    color: white;
+    border: none;
+    border-bottom: 1px solid #333;
+}
+
+#inputState{
+    background: black;
+    color: white;
+    border: none;
+    border-bottom: 1px solid #333;
+}
+
+.details span{
+    margin: 10px;
+    color: #e91e63;
+}
+
+input[type = "radio"]{
+    background: #333;
+}
+
+input[type = "email"]:focus{
+    background: black;
+    color: white;
+}
+
+input[type = "password"]{
+    background: black;
+    color: white;
+    border: none;
+    border-bottom: 1px solid #333;
+}
+
+input[type = "password"]:focus{
+    background: black;
+    color: white;
+}
+
+#button {
+    text-align: center;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 1.2rem;
+    margin-top: 5%;
+}
+
+.sot{
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 10px;
+    margin: 10px;
+}
+
+.sot input[type="radio"]{
+    opacity: 0;
+    position: fixed;
+    width: 0;
+}
+
+.sot label{
+    display: inline-block;
+    background: #000;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 2px solid #e91e63;
+    border-radius: 5px;
+}
+
+.sot label:hover{
+    background-color: #9C3256;
+}
+
+.sot input[type="radio"]:focus + label{
+    border: 2px solid #e91e63;
+}
+
+.sot input[type="radio"]:checked + label{
+    background-color: #9c3256;
+    border-color: #FF0057;
+}
+
+@media (min-width:600px){
+    nav ul{
+        font-size: 12px;
+    }
+    
+    nav ul:hover{
+        font-size: 12px;
+    }
+    
+    .headline{
+        height: 40%;
+    }
+    
+    .details{
+        height: 80%;
+    }
+}

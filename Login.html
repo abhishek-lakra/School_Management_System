@@ -1,0 +1,51 @@
+<html>
+	<head>
+		<title>Login</title>
+		<link href = "css/Login.css" rel = "stylesheet" type = "text/css" />
+	</head>
+	<body>
+	    <div class="top">
+        <nav>
+            <img src="image/logo.png" alt="logo" />
+            <ul>
+                <li><a href="Home.html">HOME</a></li>
+                <li><a href="Events.html">EVENTS</a></li>
+                <li><a href="Gallery.html">GALLERY</a></li>
+                <li><a href="About.html">ABOUT</a></li>
+                <li><a href="Contact.html">CONTACT US</a></li>
+            </ul>
+        </nav>
+    </div>
+		<div class = "loginbox">
+			<img src = "image/avatar.jpg" class = "avatar" />
+			<h1>Login Here</h1>
+			<form action="php/Login.php" method="post">
+                <div class="sot">
+            
+		        <input type="radio" class="form-check-input" id="Student" name = "SoT" value="S" required>
+                <label for="Student">Student</label>
+                
+                <input type="radio" class="form-check-input" id="Teacher" name = "SoT" value="T" required>
+                <label for="Teacher"> Teacher</label>
+                
+		    </div>
+			    <div class="inputbox">
+                    <input type = "text" name = "Mobile" required />
+                    <span>Mobile No.</span>
+                </div>
+                <div class="inputbox">
+                    <input type = "password" name = "Password" required />
+                    <span>Password</span>
+                </div>
+				<input type = "submit" name = "" value = "Login" />
+				<a href = "#">Lost your password?</a></br>
+				<a href = "Reg.html">Don't have an account</a>
+			</form>
+		</div>
+		<div class="foot">
+		<footer>
+		<p>Copyright &copy; All right reserved | Develop &amp; Design By:- Abhishek Lakra &amp; Teena BM</p>
+	</footer>
+    </div>
+	</body>
+</html>
